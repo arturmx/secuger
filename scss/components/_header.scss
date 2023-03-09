@@ -1,0 +1,103 @@
+.header {
+    position:fixed;
+    z-index:99;
+    background:$primaryColor;
+    font-size: 12px;
+    font-weight: 700;
+    color:$secondaryColor;
+    width:100%;
+    border-bottom:1px solid $secondaryColor;
+    padding-bottom: 5px;
+
+    
+
+    @media screen and (max-width: $screen-sm) {
+        padding: 20px 0;
+    }
+
+    &__wrapper {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+
+    }
+
+    &__logo {
+        width:128px;
+    }
+
+    &__nav {
+        position:relative;
+        display:flex;
+        gap:20px;
+    }
+
+    &__link {
+        display:flex;
+        align-items:center;
+        color:$secondaryColor;
+        text-decoration: none;
+        padding: 25px 0 20px;
+
+        @media screen and (max-width: $screen-sm) {
+            display:none;
+        }
+
+        &:hover {
+            color:$quinaryColor;
+        }
+
+        img {
+            width:12px;
+            margin-left:3px;
+            flex-shrink:0;
+        }
+
+        &--current {
+            color:$quinaryColor;
+            border-top: solid 2px $quinaryColor;
+        }
+    }
+
+    &__phone {
+        width:27px;
+    }
+
+    &__contact {
+        display:flex;
+        align-items:center;
+        gap:10px;
+
+        @media screen and (max-width: $screen-sm) {
+            display:none;
+        }
+    }
+
+    &__hamburger {
+        display:none;
+        cursor:pointer;
+        position:absolute;
+        right:0;
+        z-index:99;
+
+        @media screen and (max-width: $screen-sm) {
+            display:block;
+            margin-right:20px;
+        }
+    }
+
+    &__line1 {
+        width:20px;
+        border:1px solid $secondaryColor;
+        margin-bottom:3px;
+    }
+
+    &__line2 {
+        width:20px;
+        border:1px solid $secondaryColor;
+        margin-bottom:3px;
+    }
+    &__fix {
+        height:65px;
+    }
+}

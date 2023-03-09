@@ -1,0 +1,116 @@
+.project {
+
+    &__top {
+        border: 50px solid $primaryColor;
+
+        @media screen and (max-width: $screen-sm) {
+            display:none;
+        }
+    }
+
+    &__row {
+        display:flex;
+        justify-content:space-between;
+        gap:30px;
+
+        @media screen and (max-width: $screen-sm) {
+            flex-direction:column;
+            align-items:center;
+        }
+    }
+
+    &__block {
+        width:33%;
+        height:320px;
+        margin-bottom:30px;
+        background-color:#D9D9D9;
+        opacity:0.95;
+        transition: 0.2s;
+
+        &:hover {
+            scale:1.03;
+            opacity:1;
+        }
+        
+        @media screen and (max-width: $screen-lg) {
+            height:200px;
+        }
+
+        @media screen and (max-width: $screen-md) {
+            height:170px;
+        }
+
+        @media screen and (max-width: $screen-sm) {
+            width:90%;
+            height:350px;
+            margin-bottom:10px;
+        }
+
+        @media screen and (max-width: $screen-xs) {
+            height:200px;
+            width:100%;
+        }
+    }
+
+    &__block3 {
+        width:33%;
+        margin-bottom:30px;
+        background-color:#39416B;
+        text-align:center;
+        opacity:0.95;
+        transition: 0.2s;
+
+        &:hover {
+            scale:1.02;
+            opacity:1;
+        }
+
+        @media screen and (max-width: $screen-lg) {
+            height:200px;
+        }
+
+        @media screen and (max-width: $screen-md) {
+            height:170px;
+        }
+
+        @media screen and (max-width: $screen-sm) {
+            width:90%;
+            height:350px;
+        }
+
+        @media screen and (max-width: $screen-xs) {
+            height:200px;
+            width:100%;
+        }
+    }
+
+    &__magnifier {
+        padding:105px 0 20px;
+
+        @media screen and (max-width: $screen-lg) {
+            padding:50px 0 20px;
+        }
+
+        @media screen and (max-width: $screen-md) {
+            padding:30px 0 20px;
+        }
+
+        @media screen and (max-width: $screen-sm) {
+            padding:100px 0 20px;
+        }
+
+        @media screen and (max-width: $screen-xs) {
+            padding:50px 0 20px;
+        }
+    }
+
+    &__block-text {
+        color:$primaryColor;
+        font-size:16px;
+    }
+
+    &__bottom {
+        text-align:center;
+        margin:20px 0 130px;
+    }
+}

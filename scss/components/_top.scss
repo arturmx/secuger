@@ -1,0 +1,58 @@
+.top {
+    color:#FFF;
+    background-color:$secondaryColor;
+    padding-bottom:80px;
+
+    &__center {
+        @media screen and (max-width: $screen-sm) {
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+    }
+    
+    &__h2 {
+        font-size:16px;
+        color:$senaryColor;
+        padding:74px 0 22px;
+    }
+
+    &__h3 {
+        font-size:36px;
+        font-weight:700;
+        line-height: 48px;
+        width:300px;
+        max-width: 80%;
+
+        @media screen and (max-width: $screen-sm) {
+            text-align:center;
+        }
+    }
+    &__p {
+        font-size:12px;
+        width:300px;
+        padding:42px 0 42px;
+        line-height:20px;
+        opacity:0.7;
+
+        @media screen and (max-width: $screen-sm) {
+            text-align:center;
+        }
+    }
+    &__buttons {
+        display:flex;
+        gap:18px;
+
+        @media screen and (max-width: $screen-sm) {
+            flex-direction:column;
+            align-items:center;
+            text-align:center;
+            width:250px;
+        }
+    }
+}
+.slider1 .slick-slide {
+    @media screen and (max-width: $screen-sm) {
+        display:flex;
+    }
+}
